@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f8ff;
+    color: #172033;
+}
+
+header {
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #6658e8;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #6658e8;
+}
+
+.hero {
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    background: linear-gradient(120deg, #eeeeff, #fff0fb);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #6658e8;
+}
+
+.hero p {
+    color: #626879;
+    line-height: 1.8;
+}
+
+.profile {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background: #6658e8;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 55px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 13px 20px;
+    background: #6658e8;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+section {
+    padding: 55px 8%;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid #e5e5f0;
+    box-shadow: 0 8px 25px #1720330b;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card h3 {
+    color: #6658e8;
+}
+
+.card p {
+    color: #626879;
+    line-height: 1.7;
+}
+
+.skills span {
+    display: inline-block;
+    background: #eeeeff;
+    color: #5146bd;
+    padding: 9px 12px;
+    margin: 5px;
+    border-radius: 6px;
+}
+
+.contact {
+    background: #172033;
+    color: white;
+    text-align: center;
+}
+
+.contact p {
+    color: #d1d5e2;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #101629;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 50px 6%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .profile {
+        width: 150px;
+        height: 150px;
+        font-size: 40px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">MyPortfolio.</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <div>
+        <h1>Hello, I'm <span>CH.PRASAD</span></h1>
+        <h3>Student & Web Developer</h3>
+        <p>
+            I enjoy creating beautiful websites and learning
+            new technologies. My goal is to build useful
+            digital experiences.
+        </p>
+        <a class="button" href="#projects">Explore My Work</a>
+    </div>
+
+    <div class="profile">AM</div>
+</div>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a motivated student interested in web development,
+        technology, creative design and problem-solving.
+        I enjoy learning through practical projects.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills">
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>Responsive Design</span>
+        <span>Communication</span>
+        <span>Teamwork</span>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Restaurant Website</h3>
+            <p>A modern restaurant menu with food categories and prices.</p>
+        </div>
+
+        <div class="card">
+            <h3>Student Dashboard</h3>
+            <p>A dashboard concept for academic details and attendance.</p>
+        </div>
+
+        <div class="card">
+            <h3>College Website</h3>
+            <p>A responsive website for college information and courses.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Education</h2>
+    <div class="card">
+        <h3>Bachelor's Degree</h3>
+        <p>Computer Science — Currently Studying</p>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Let's Connect</h2>
+    <p>Email: PRASAD@example.com</p>
+    <p>Location: India</p>
+    <a class="button" href="mailto:alex@example.com">Contact Me</a>
+</section>
+
+<footer>
+    © 2026 My Portfolio | Designed with HTML and CSS
+</footer>
+
+</body>
+</html>
